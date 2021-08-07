@@ -85,10 +85,11 @@ header nav {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 800px 1000px 200px 400px 80px;
+    grid-template-rows: 800px 800px 800px 200px 400px 80px;
     grid-template-areas: 
     "parrafo1"
     "ejercitos"
+    "parrafo2"
     "links"
     "footer"
     "copy";
@@ -145,9 +146,7 @@ main {
     text-align: center;
 }
 
-.imagen1 .extra1 .text1 {
-}
-
+/* Parrafo uno */
 .mucho-texto-1 {
     grid-area: parrafo;
     display: grid;
@@ -201,24 +200,68 @@ main {
 }
 
 
+/* Ejercitos */
+.ejercitos {
+    grid-area: ejercitos;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas: 
+    "sub-titulo-2"
+    "resumen";
+}
+
+.ejercitos .sub-titulo-2 {
+    grid-area: sub-titulo-2;
+    margin: auto 100px;
+}
+
+.resumen {
+    grid-area: resumen;
+    font-size: 15px;
+}
+
+.content {
+    word-wrap: break-word;
+    font-size: 100%;
+    border: 1px solid #54595d;
+    border-color: rgba(84,89,93,0.3);
+    margin: 20px auto 20px auto;
+    width: 80%;
+}
+
+.content .tabla th,
+.content .tabla td {
+    height: 50px;
+    margin: auto auto;
+}
+
+.tabla-div td {
+    height: 35px;
+    margin: auto auto;
+}
+
+.btn {
+    text-decoration: none;
+    border-top: none;
+    border-bottom: 2px solid transparent;
+    padding: 2px 0;
+    transition: 0.7s ease-out;
+
+}
+
+.btn:hover {
+    border-top: none;
+    border-bottom: 2px solid black;
+}
+
+#varsil {
+    text-decoration: none;
+    border: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*por las dudas
--Info-2-
+/*Info-2-*/
 
 .info-2 {
     grid-area: parrafo2;
@@ -230,7 +273,7 @@ main {
     "parrafo imagen";
 }
 
-.sub-titulo-2 {
+.sub-titulo-3 {
     grid-area: sub-titulo;
     width: 100%;
     margin: auto;
@@ -254,8 +297,8 @@ main {
 .imagen2 .img1 {
     grid-area: img;
     margin: auto;
-    width: 75%;
-    height: 90%;
+    width: 250px;
+    height: 200px;
 }
 
 .imagen2 .extra2 {
@@ -328,7 +371,7 @@ main {
 }
 
 
-Info-3
+/*Info-3
 .info-3 {
     grid-area: parrafo3;
     display: grid;
@@ -434,7 +477,6 @@ Info-3
     width: 85%;
     font-size: 16px;
 }
-*/
 
 
 
